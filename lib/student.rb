@@ -1,14 +1,11 @@
 class Student 
-  attr_accessor :Student
-  
-  def first_name
-    @first_name = "Steve"
-  end  
-  
-  def last_name
-    @last_name = "Jobs"
-  end  
-  
-  Student.new = "sophie"
-
+class Student < User
+  attr_accessor :knowledge
+ end 
+  def initialize
+    @knowledge = []
+  end
+   def learn(string)
+    knowledge << string
+  end
 end
