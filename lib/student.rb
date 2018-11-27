@@ -8,5 +8,7 @@ class Student
   def last_name
     @last_name = "Jobs"
   end  
+  
+  Student.new = "sophie"
 
 end
